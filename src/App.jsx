@@ -1,27 +1,21 @@
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
+import SellerHero from './components/SellerHero';
+import Benefits from './components/Benefits';
+import ProductShowcase from './components/ProductShowcase';
 import CTA from './components/CTA';
+import SimpleFooter from './components/SimpleFooter';
 
 function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Navbar />
       <main>
-        <Hero />
-        <Features />
+        <SellerHero />
+        <Benefits />
+        <ProductShowcase />
         <CTA />
       </main>
-      <footer className="border-t border-gray-100 py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500">© {new Date().getFullYear()} UGC Market. All rights reserved.</p>
-          <div className="flex items-center gap-6 text-sm text-gray-600">
-            <a href="#" className="hover:text-gray-900">Privasi</a>
-            <a href="#" className="hover:text-gray-900">Ketentuan</a>
-            <a href="#" className="hover:text-gray-900">Kontak</a>
-          </div>
-        </div>
-      </footer>
+      <SimpleFooter />
     </div>
   );
 }
